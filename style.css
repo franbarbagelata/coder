@@ -1,0 +1,87 @@
+/* Sintaxis de CSS Selector puede ser una etiqueta de HTML 
+propiedad es un atributo que le vamos a dar a las etiquetas por ejemplo un color ->
+
+selector {
+    propiedad: valor;
+}
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Defino la unidad de medida general para todo mi proyecto*/
+html {
+    font-size: 20px;
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: 85px;
+}
+
+.paragraph {
+    color: blue;
+
+}
+
+/* para individualizar los elementos de html em css puedo utilizar clases con atributo class siempre lleva el punto delante
+*/
+/* ID # delante del nombre del ID */
+
+#servicios {
+    background-color: red;
+}
+
+.lorem {
+    color: rgb(89, 131, 48);
+}
+
+.facebook {
+text-decoration: none;
+}
+
+.inicio {
+    font-size: 20px;
+}
+
+/* La difirencia entre class y ID es que class se puede reutilizar pero ID no. El ID es como tu DNI en cambio la class es como un atributo tuyo
+
+ID= para vincular enlaces, identificar una sección concreta o para javascript u otros lenguajes
+
+class=lo vamos a usar todo el tiempo
+*/
+
+/* El reseteo 
+Se utiliza el selector universal que es un asterisco y le saco el margen y el relleno con dos propiedades que se llaman margin y padding
+*/
+/*Unidades de medida
+Unidades absolutas/ En desarrollo web decimos que son absolutas porque no cambian su tamaño en relacion a la pantalla
+cm - mt - mm
+
+Unidades relativas/ Son las que se adaptan al tipo de pantalla 
+200px - 200% - 2em - 2rem - 2vh - 2vw
+
+/* rem / es relativa al elemento root /  root es la medida general que nos da el navegador / 16 px */
+
+a {
+    font-size: 2em;
+}
+
+/* em / Relativa al elemento html o :root que son definidos por nosotros mismos*/
+
+/* Cual utilizamos entonces?
+Parrafos, titulos, enlaces suelen tener px en el font-size
+Las imagenes y videos o multimedia suele utilizar porcentaje vh y vw
+Las propiedades de la caja, margin y padding, pueden usar rem o em
+
+*/
+body {
+    background-image: url(descarga.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
